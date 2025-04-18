@@ -23,7 +23,7 @@ router.post("/create", async (req, res) => {
         }
 
         const options = {
-            amount: 1000 * 100, // Amount in paise (₹10.00)
+            amount: 15* 100, // Amount in paise (₹10.00)
             currency: "INR",
             receipt: `receipt_${unitId}`,
         };

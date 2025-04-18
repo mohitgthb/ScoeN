@@ -40,7 +40,7 @@ process.on('SIGINT', async () => {
 });
 
 app.use(cors({
-    origin: ["http://localhost:5173", "http://localhost:5174", "http://localhost:5176"],//Add frontend URL
+    origin: ["http://localhost:5173", "http://localhost:5174", "http://localhost:5175"],//Add frontend URL
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE"], 
     allowedHeaders: ["Content-Type", "Authorization"] 
@@ -67,7 +67,9 @@ app.use(session({
         maxAge: 1000 * 60 * 60 * 24 * 7, // 7 days
     }
 }));
-app.use("/uploads", express.static("uploads"));
+const path = require("path");
+app.use("/uploads", express.static(path.join(__dirname, "uploads")));
+
 
 app.use(passport.initialize());
 app.use(passport.session());

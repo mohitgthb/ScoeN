@@ -12,6 +12,7 @@ import { CourseViewerPage }  from "./pages/student/viewCourses";
 import  PDFList from "./pages/PDFList";
 import  { UnitsPage }  from "./pages/units";
 import PDFViewer from "./components/PDFViewer";
+import SecurePDFViewer from "./pages/SecurePDFViewer";
 
 
 export default function App() {
@@ -30,6 +31,7 @@ export default function App() {
         <Route path="/units/:id" element={<UnitsPage />} />
         <Route path="/pdf-viewer" element={<PDFViewer />} />
         <Route path="/view-pdf" element={<CourseViewerPage />} />
+        <Route path="/view/:unitId" element={<SecurePDFViewer />} />
       </Routes>
     </Router>
   )
