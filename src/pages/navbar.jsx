@@ -16,7 +16,7 @@ export function Navbar() {
 
   const checkAuthStatus = async () => {
     try {
-      const response = await fetch("https://scoen.onrender.com/auth/me", {
+      const response = await fetch("https://scoen1.onrender.com/auth/me", {
         credentials: "include", // Include cookies
       });
 
@@ -38,7 +38,7 @@ export function Navbar() {
 
   const handleLogout = async () => {
     try {
-      const response = await fetch("https://scoen.onrender.com/auth/logout", {
+      const response = await fetch("https://scoen1.onrender.com/auth/logout", {
         method: "POST",
         credentials: "include", // Include cookies
       });
