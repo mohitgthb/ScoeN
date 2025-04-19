@@ -22,7 +22,7 @@ export function SignUpPage() {
         e.preventDefault();
 
         // try {
-        //     const response = await fetch('http://localhost:5000/auth/signup', {
+        //     const response = await fetch('https://scoen1.onrender.com/auth/signup', {
         //         method: 'POST',
         //         headers: {
         //             'Content-Type': 'application/json',
@@ -44,7 +44,7 @@ export function SignUpPage() {
         // }
 
         try {
-            const response = await fetch('http://localhost:5000/auth/signup', {
+            const response = await fetch('https://scoen1.onrender.com/auth/signup', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

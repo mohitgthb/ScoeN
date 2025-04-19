@@ -13,7 +13,7 @@
 // // import m1 from '../components/images/Subjects/m1.jpg'
 
 
-// // const API_BASE_URL = "http://localhost:5000";
+// // const API_BASE_URL = "https://scoen1.onrender.com";
 
 // // export function Courses() {
 // //   // Mock courses data
@@ -158,7 +158,7 @@
 // import { Link } from "react-router-dom";
 // import { Studentnav } from "./student/studentnav";
 
-// const API_BASE_URL = "http://localhost:5000";
+// const API_BASE_URL = "https://scoen1.onrender.com";
 
 // export function Courses() {
 //   const [subjects, setSubjects] = useState([]);
@@ -261,7 +261,7 @@ import pps from "../components/images/Subjects/pps.jpg";
 import fpl from "../components/images/Subjects/fpl.jpg";
 import m1 from "../components/images/Subjects/m1.jpg";
 
-const API_BASE_URL = "http://localhost:5000";
+const API_BASE_URL = "https://scoen1.onrender.com";
 
 // 📌 Subject name-to-image map
 const subjectImageMap = {

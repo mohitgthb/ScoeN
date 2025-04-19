@@ -6,7 +6,7 @@ import "react-pdf/dist/Page/TextLayer.css";
 
 pdfjs.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
-const API_BASE_URL = import.meta.env.API_BASE_URL || "http://localhost:5000";
+const API_BASE_URL = import.meta.env.API_BASE_URL || "https://scoen1.onrender.com";
 
 const SecurePDFViewer = () => {
   const viewerRef = useRef(null);
@@ -137,7 +137,7 @@ export default SecurePDFViewer;
 // import React, { useEffect, useRef } from "react";
 // import { useParams, useNavigate } from "react-router-dom";
 
-// const API_BASE_URL = import.meta.env.API_BASE_URL || "http://localhost:5000";
+// const API_BASE_URL = import.meta.env.API_BASE_URL || "https://scoen1.onrender.com";
 
 // const SecurePDFViewer = () => {
 //   const viewerRef = useRef(null);

@@ -40,7 +40,7 @@ process.on('SIGINT', async () => {
 });
 
 app.use(cors({
-    origin: ["http://localhost:5173", "http://localhost:5174", "http://localhost:5175"],//Add frontend URL
+    origin: ["http://localhost:5173", "http://localhost:5174", "http://localhost:5175", "https://scoen.onrender.com"],//Add frontend URL
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE"], 
     allowedHeaders: ["Content-Type", "Authorization"] 
@@ -95,7 +95,7 @@ passport.use(new LocalStrategy(
 // passport.use(new GoogleStrategy({
 //     clientID: process.env.GOOGLE_CLIENT_ID, // from Google Cloud Console
 //     clientSecret: process.env.GOOGLE_CLIENT_SECRET, // from Google Cloud Console
-//     callbackURL: "http://localhost:5000/auth/google/callback", // Callback URL
+//     callbackURL: "https://scoen1.onrender.com/auth/google/callback", // Callback URL
 //   },
 //   async (accessToken, refreshToken, profile, done) => {
 //     try {

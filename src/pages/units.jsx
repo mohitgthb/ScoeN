@@ -3,7 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { Studentnav } from "../../src/pages/student/studentnav";
 import { Button } from "../components/ui/button";
 
-const API_BASE_URL = import.meta.env.API_BASE_URL || "http://localhost:5000";
+const API_BASE_URL = import.meta.env.API_BASE_URL || "https://scoen1.onrender.com";
 
 export function UnitsPage() {
   const { id: subjectId } = useParams();
@@ -366,7 +366,7 @@ export function UnitsPage() {
 // import { Studentnav } from "../../src/pages/student/studentnav";
 // import { Button } from "../components/ui/button";
 
-// const API_BASE_URL = import.meta.env.API_BASE_URL || "http://localhost:5000";
+// const API_BASE_URL = import.meta.env.API_BASE_URL || "https://scoen1.onrender.com";
 
 // export function UnitsPage() {
 //   const { id: subjectId } = useParams();
@@ -712,7 +712,7 @@ export function UnitsPage() {
 // // // import { Button } from "../components/ui/button"
 // // // import { useEffect, useState } from "react";
 
-// // // const API_BASE_URL = "http://localhost:5000";
+// // // const API_BASE_URL = "https://scoen1.onrender.com";
 
 
 // // // export function UnitsPage() {

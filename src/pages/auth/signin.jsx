@@ -22,7 +22,7 @@ export function SignInPage() {
         e.preventDefault();
     
         try {
-            const response = await fetch('http://localhost:5000/auth/signin', {
+            const response = await fetch('https://scoen1.onrender.com/auth/signin', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ email, password }),
@@ -51,7 +51,7 @@ export function SignInPage() {
     //     e.preventDefault();
 
     //     try {
-    //         const response = await fetch('http://localhost:5000/auth/signin', {
+    //         const response = await fetch('https://scoen1.onrender.com/auth/signin', {
     //             method: 'POST',
     //             headers: {
     //                 'Content-Type': 'application/json',
@@ -92,7 +92,7 @@ export function SignInPage() {
                         <Button 
                             variant="outline" 
                             className="w-full gap-2"
-                            onClick={() => window.location.href = "http://localhost:5000/auth/google"}
+                            onClick={() => window.location.href = "https://scoen1.onrender.com/auth/google"}
                             >
                             <img 
                                 src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" 
